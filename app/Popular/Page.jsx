@@ -30,11 +30,11 @@ const PopularPage = () => {
   ];
   return (
     <div className="w-full h-auto py-15 flex justify-center items-center">
-      <div className="w-[85%] flex justify-center items-center h-auto gap-5 flex-col">
+      <div className="lg:w-[85%] w-full flex justify-center items-center h-auto gap-5 flex-col">
         <h2 className="text-primary 2xl:text-7xl text-center max-md:max-w-lg gap-2 xl:text-6xl lg:text-5xl md:text-4xl max-md:text-5xl">
           Our <span className="text-secondary">Popular</span> Items
         </h2>
-        <div className="w-full h-auto grid lato lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
+        <div className="w-full h-auto grid lato lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 justify-center items-center">
           {popular_data.map(({ name, image, price }) => (
             <Card className="border-none shadow-none w-[350px] h-[300px]">
               <CardContent className="flex justify-center items-center gap-3 flex-col">
