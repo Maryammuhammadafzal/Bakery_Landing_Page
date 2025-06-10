@@ -4,6 +4,7 @@ import PopularPage from "./Popular/Page";
 import AboutPage from "./About/Page";
 import CategoriesPage from "./Categories/Page";
 import SpecialBannerPage from "./Banner/Page";
+import BlogPage from "./Blog/Page";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutPage/>
       <CategoriesPage/>
       <SpecialBannerPage/>
+      <BlogPage/>
     </div>
   );
 }
