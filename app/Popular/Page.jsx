@@ -43,7 +43,7 @@ const PopularPage = () => {
                   width={200}
                   height={150}
                   alt={name}
-                  className="min-h-[200px]"
+                  className="h-[250px]"
                 />
                 <p className="text-primary px-10 text-center text-lg">
                   {name}

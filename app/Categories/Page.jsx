@@ -9,12 +9,60 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
+import CategoryImage1 from "../../public/images/category-image-1.png";
+import CategoryImage2 from "../../public/images/category-image-2.png";
+import CategoryImage3 from "../../public/images/category-image-3.png";
+import CategoryImage4 from "../../public/images/category-image-4.png";
+import Image from 'next/image';
 
 const CategoriesPage = () => {
+        let categories_data = [
+            {
+              name: "Chocolate Strawberry CupCake",
+              price: "$7.99",
+              image: CategoryImage1.src,
+            },
+            {
+              name: "Chocolate Strawberry CupCake",
+              price: "$7.99",
+              image: CategoryImage2.src,
+            },
+            {
+              name: "Chocolate Strawberry CupCake",
+              price: "$7.99",
+              image: CategoryImage3.src,
+            },
+            {
+              name: "Chocolate Strawberry CupCake",
+              price: "$7.99",
+              image: CategoryImage4.src,
+            },
+            {
+              name: "Chocolate Strawberry CupCake",
+              price: "$7.99",
+              image: CategoryImage1.src,
+            },
+            {
+              name: "Chocolate Strawberry CupCake",
+              price: "$7.99",
+              image: CategoryImage2.src,
+            },
+            {
+              name: "Chocolate Strawberry CupCake",
+              price: "$7.99",
+              image: CategoryImage3.src,
+            },
+            {
+              name: "Chocolate Strawberry CupCake",
+              price: "$7.99",
+              image: CategoryImage4.src,
+            },
+          ];
   return (
-    <div>
-       <div className="w-full h-auto flex lato justify-center items-center">
+    <div className='w-full h-auto flex lato justify-center items-center"'>
+       <div className="w-full h-auto flex flex-col lato justify-center items-center">
       <div className="lg:w-[85%] md:w-[95%] w-[98%] py-8 md:py-12 flex flex-col justify-center gap-3 items-center relative">
         <h2 className="text-secondary 2xl:text-7xl text-center max-md:max-w-lg gap-2 xl:text-6xl lg:text-5xl md:text-4xl max-md:text-5xl">
           Categories
@@ -25,7 +73,7 @@ const CategoriesPage = () => {
               {/* Item 1 */}
               <NavigationMenuItem>
                 <Link className="link" href="/cupcake" passHref>
-                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
+                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                      CupCakes
                   </NavigationMenuLink>
                 </Link>
@@ -33,7 +81,7 @@ const CategoriesPage = () => {
               {/* Item 2 */}
               <NavigationMenuItem>
                 <Link className="link" href="/breads" passHref>
-                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
+                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                    Breads
                   </NavigationMenuLink>
                 </Link>
@@ -41,7 +89,7 @@ const CategoriesPage = () => {
               {/* Item 3 */}
              <NavigationMenuItem>
                 <Link className="link" href="/pastries" passHref>
-                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
+                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                    Pastries
                   </NavigationMenuLink>
                 </Link>
@@ -49,7 +97,7 @@ const CategoriesPage = () => {
               {/* Item 4 */}
               <NavigationMenuItem>
                 <Link className="link" href="/cakes" passHref>
-                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
+                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                  Cakes
                   </NavigationMenuLink>
                 </Link>
@@ -57,7 +105,7 @@ const CategoriesPage = () => {
               {/* Item 5 */}
               <NavigationMenuItem>
                 <Link className="link" href="/cookies" passHref>
-                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
+                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                   Cookies
                   </NavigationMenuLink>
                 </Link>
@@ -65,13 +113,34 @@ const CategoriesPage = () => {
               {/* Item 6 */}
               <NavigationMenuItem>
                 <Link className="link" href="/seasonal-special" passHref>
-                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
+                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                   Seasonal Specials
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+        </div>
+      </div>
+      <div className='lg:w-[85%] md:w-[95%] w-[98%] py-8 md:py-12 flex justify-center gap-3 items-center'>
+        <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center items-center w-full h-auto gap-10'>
+                {categories_data.map(({ name, image, price }, index) => (
+            <Card key={index} className="border-none shadow-none w-[350px] h-[300px]">
+              <CardContent className="flex justify-center items-center gap-3 flex-col">
+                <Image
+                  src={image}
+                  width={200}
+                  height={150}
+                  alt={name}
+                  className="h-[250px]"
+                />
+                <p className="text-primary px-10 text-center text-lg">
+                  {name}
+                </p>
+                <p className="text-secondary text-base">{price}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </div>
