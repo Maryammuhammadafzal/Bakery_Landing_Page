@@ -70,13 +70,13 @@ const Footer = () => {
               Get In Touch
             </h4>
             <ul className="list-none py-2 gap-1 flex flex-col ">
-              <li className="text-base font-[Nunito Sans]  font-[400] ">
+              <li className="text-sm font-[Nunito Sans]  font-[400] ">
                4517 Washington Ave. Manchester, Kentucky 39495
               </li>
-              <li className="text-base font-[Nunito Sans]  font-[400]">
+              <li className="text-sm font-[Nunito Sans]  font-[400]">
                 jessica.hanson@example.com
               </li>
-              <li className="text-base font-[Nunito Sans]  font-[400]">
+              <li className="text-sm font-[Nunito Sans]  font-[400]">
                (308) 555-0121
               </li>
             </ul>
@@ -93,20 +93,15 @@ const Footer = () => {
               <FaWhatsapp size={20}/>
 
             </div>
-            <div className="w-full min-sm:hidden flex justify-evenly items-center  text-white max-sm:flex-wrap max-sm:h-auto max-sm:gap-5">
-              {contact_data.map(({ name, link }) => (
-                <div
-                  key={name}
-                  className="w-[200px] flex flex-col max-sm:w-full"
-                >
-                  <h3 className="text-lg">{name}</h3>
-                  <a href="{link}" className="text-[14px]">
-                    {link}
-                  </a>
-                </div>
-              ))}
-            </div>
           </div>
+        </div>
+        <div className="copyright flex sm:flex-row flex-col gap-4 justify-between items-center w-full h-auto py-5">
+          <p className="md:text-sm text-xs">© 2021 all copyright reserved. All Rights Reserved.</p>
+          <ul className="flex gap-2 md:text-sm text-xs">
+            <li>Term of services</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+          </ul>
         </div>
       </div>
     </div>

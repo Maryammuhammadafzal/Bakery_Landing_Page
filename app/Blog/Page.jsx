@@ -29,18 +29,18 @@ const BlogPage = () => {
         <h2 className="text-primary 2xl:text-7xl text-center max-md:max-w-lg gap-2 xl:text-6xl lg:text-5xl md:text-4xl max-md:text-5xl">
                  <span className="text-secondary">Freshly</span> Backed Thoughts
         </h2>
-        <div className="w-full h-auto grid lato lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 justify-center items-center">
+        <div className="w-full h-auto lato flex flex-wrap gap-4 justify-evenly items-center">
           {blog_data.map(({ title, image, description }, index) => (
-            <Card key={index} className="border-none bg-[#FFF8E8] py-0 shadow-none w-[360px] h-[380px]">
+            <Card key={index} className="border-none bg-[#FFF8E8] py-0 shadow-none w-[340px] h-[380px]">
               <CardContent className="flex px-0 w-full  h-auto rounded-md flex-col">
                 <Image
                   src={image}
                   width={200}
                   height={180}
                   alt={title}
-                  className="h-[180px] w-full object-cover"
+                  className="h-[180px] w-full rounded-tl-md rounded-tr-md object-cover"
                 />
-                <p className="text-primary px-4 py-2 text-lg">
+                <p className="text-primary px-4 py-2 text-base">
                   {title}
                 </p>
                 <p className="text-primary px-4 text-base">{description}</p>
