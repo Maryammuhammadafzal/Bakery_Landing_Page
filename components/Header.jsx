@@ -40,7 +40,7 @@ useEffect(() => {
   };
 }, []);
   return (
-    <header className="w-full h-auto flex justify-center items-center">
+    <header className="w-full h-auto flex lato justify-center items-center">
       <div className="lg:w-[85%] md:w-[95%] w-[98%] py-8 md:py-12 flex justify-between items-center relative">
         <Link href="/">
           <Image

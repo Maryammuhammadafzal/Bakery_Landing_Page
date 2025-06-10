@@ -11,7 +11,9 @@ const HeroPage = () => {
                 <span className="text-primary">One Crumb at a Time</span>
                 <span><Image width={50} height={50} src={CupcakeIcon} alt="icon" /></span>
         </h1>
-        <p className="text-primary"></p>
+        <p className="text-primary lato">
+          <span className="text-secondary text-2xl">W</span>elcome to Crème Crust, your destination for handcrafted treats made with love and premium ingredients. Our passion for baking shines through every loaf, tart, and cookie we create. Discover the magic of fresh, from-scratch delights at our cozy bakery.
+        </p>
         </div>
         <div className="right flex  h-auto w-1/2 items-center justify-center">
         
