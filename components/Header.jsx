@@ -54,51 +54,51 @@ useEffect(() => {
             <NavigationMenuList className="flex gap-2 lg:gap-4">
               {/* Item 1 */}
               <NavigationMenuItem>
-                <Link className="link" href="/" legacyBehavior passHref>
+                {/* <Link className="link" href="/" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
                     <span className="icon text-secondary"><HomeIcon color="#DE767B"/></span> Home
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
               {/* Item 2 */}
               <NavigationMenuItem>
-                <Link className="link" href="/about" legacyBehavior passHref>
+                {/* <Link className="link" href="/about" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
                     <span className="icon text-secondary"><UserIcon color="#DE767B"/></span> About Us
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
               {/* Item 3 */}
              <NavigationMenuItem>
-                <Link className="link" href="/popular" legacyBehavior passHref>
+                {/* <Link className="link" href="/popular" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
                    <span className="icon text-secondary"><FlameIcon color="#DE767B"/></span> Popular
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
               {/* Item 4 */}
               <NavigationMenuItem>
-                <Link className="link" href="/blog" legacyBehavior passHref>
+                {/* <Link className="link" href="/blog" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
                  <span className="icon text-secondary"><FileTextIcon color="#DE767B"/></span>  Blog
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
               {/* Item 5 */}
               <NavigationMenuItem>
-                <Link className="link" href="/categories" legacyBehavior passHref>
+                {/* <Link className="link" href="/categories" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
                   <span className="icon text-secondary"><List color="#DE767B"/></span>  Categories
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
               {/* Item 6 */}
               <NavigationMenuItem>
-                <Link className="link" href="/contact" legacyBehavior passHref>
+                {/* <Link className="link" href="/contact" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}>
                    <span className="icon text-secondary"><MessageCircle color="#DE767B"/></span> Contact Us
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -130,59 +130,59 @@ useEffect(() => {
               <NavigationMenuList className="w-full flex flex-col items-start gap-2 lg:gap-4">
                 {/* Item 1 */}
                 <NavigationMenuItem>
-                  <Link className="link" href="/" legacyBehavior passHref>
+                  {/* <Link className="link" href="/" passHref> */}
                     <NavigationMenuLink
                       className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}
                     >
-                    <span className="icon text-secondary"><HomeIcon color="#DE767B"/></span>  Home
+                     <span className="icon text-secondary"><HomeIcon color="#DE767B"/></span>  Home
                     </NavigationMenuLink>
-                  </Link>
+                  {/* </Link> */}
                 </NavigationMenuItem>
                 {/* Item 2 */}
                 <NavigationMenuItem>
-                  <Link href="/about" legacyBehavior passHref>
+                  {/* <Link href="/about" passHref> */}
                     <NavigationMenuLink
                       className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}
                     >
-                    <span className="icon text-secondary"><UserIcon color="#DE767B"/></span>  About Us
+                       <span className="icon text-secondary"><UserIcon color="#DE767B"/></span>  About Us
                     </NavigationMenuLink>
-                  </Link>
+                  {/* </Link> */}
                 </NavigationMenuItem>
                 {/* Item 3 */}
              <NavigationMenuItem>
-                <Link href="/popular" legacyBehavior passHref>
+                {/* <Link href="/popular" passHref> */}
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     <span className="icon text-secondary"><FlameIcon color="#DE767B"/></span> Popular
                   </NavigationMenuLink>
-                </Link>
+                {/* // </Link> */}
               </NavigationMenuItem>
                 {/* Item 4 */}
                <NavigationMenuItem>
-                <Link href="/blog" legacyBehavior passHref>
+                {/* <Link href="/blog" passHref> */}
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   <span className="icon text-secondary"><FileTextIcon color="#DE767B"/></span> Blog
                   </NavigationMenuLink>
-                </Link>
+                {/* // </Link> */}
               </NavigationMenuItem>
                 {/* Item 5 */}
                 <NavigationMenuItem>
-                  <Link href="/categories" legacyBehavior passHref>
+                  {/* <Link href="/categories" passHref> */}
                     <NavigationMenuLink
                       className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}
                     >
-                     <span className="icon text-secondary"><List color="#DE767B"/></span> Categories
+                    <span className="icon text-secondary"><List color="#DE767B"/></span> Categories
                     </NavigationMenuLink>
-                  </Link>
+                  {/* </Link> */}
                 </NavigationMenuItem>
                 {/* Item 6 */}
                 <NavigationMenuItem>
-                  <Link href="/contact" legacyBehavior passHref>
+                  {/* <Link href="/contact" passHref> */}
                     <NavigationMenuLink
                       className={`flex gap-1 flex-row items-center justify-center link ${navigationMenuTriggerStyle()}`}
                     >
                      <span className="icon text-secondary"><MessageCircle color="#DE767B"/></span> Contact Us
                     </NavigationMenuLink>
-                  </Link>
+                  {/* </Link> */}
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>

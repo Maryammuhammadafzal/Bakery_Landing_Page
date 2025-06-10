@@ -6,12 +6,12 @@ const AboutPage = () => {
     <div className="flex h-auto py-20 justify-center items-center">
       <div className="flex gap-5 max-sm:px-2  md:flex-row flex-col justify-center items-center h-auto w-full">
         <div className="left md:pl-24  flex flex-col h-auto md:w-[55%] w-full gap-4 md:items-start items-center justify-center">
-          <h1 className=" text-primary 2xl:text-[64px] md:text-start text-center max-md:max-w-lg gap-2 xl:text-5xl lg:text-4xl md:text-3xl max-md:text-4xl items-center">
+          <h2 className=" text-primary 2xl:text-[64px] md:text-start text-center max-md:max-w-lg gap-2 xl:text-5xl lg:text-4xl md:text-3xl max-md:text-4xl items-center">
             <span className="text-primary">
               <span className="text-secondary">Where Every Bite Tells a </span>
               Story of Love and Craftsmanship
             </span>
-          </h1>
+          </h2>
           <p className="text-primary lato md:text-start text-center text-base max-w-xl">
             <span className="text-secondary text-2xl">W</span>elcome to Crème
             Crust, your ultimate destination for mouthwatering, handcrafted

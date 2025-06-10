@@ -35,8 +35,8 @@ const PopularPage = () => {
           Our <span className="text-secondary">Popular</span> Items
         </h2>
         <div className="w-full h-auto grid lato lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 justify-center items-center">
-          {popular_data.map(({ name, image, price }) => (
-            <Card className="border-none shadow-none w-[350px] h-[300px]">
+          {popular_data.map(({ name, image, price }, index) => (
+            <Card key={index} className="border-none shadow-none w-[350px] h-[300px]">
               <CardContent className="flex justify-center items-center gap-3 flex-col">
                 <Image
                   src={image}
