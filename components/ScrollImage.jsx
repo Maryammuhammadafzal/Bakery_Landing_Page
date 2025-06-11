@@ -24,6 +24,27 @@ const ScrollImage = () => {
       <div
         style={{
           transform: `${
+            offset + 40 < 730 &&
+            `translateY(${offset - 70}px) translateX(-${
+              offset + 110
+            }px) scale(${scale})`
+          }`,
+          transition: "transform 0.05s linear",
+        }}
+        className="w-[450px] h-[500px] 2xl:block hidden"
+      >
+        <Image
+          width={430}
+          height={400}
+          src={HeroImage}
+          className="w-full object-cover"
+          alt="image-1"
+        />
+      </div>
+
+      <div
+        style={{
+          transform: `${
             offset + 40 < 650 &&
             `translateY(${offset - 50}px) translateX(-${
               offset + 30
@@ -31,7 +52,7 @@ const ScrollImage = () => {
           }`,
           transition: "transform 0.05s linear",
         }}
-        className="w-[450px] h-[500px] xl:block hidden"
+        className="w-[450px] h-[500px] xl:block 2xl:hidden hidden"
       >
         <Image
           width={430}
@@ -52,7 +73,7 @@ const ScrollImage = () => {
           }`,
           transition: "transform 0.05s linear",
         }}
-        className="w-[450px] h-[500px] max-lg:hidden min-lg:block xl:hidden hidden"
+        className="w-[450px] h-[500px] lg:block xl:hidden hidden"
       >
         <Image
           width={430}
@@ -73,7 +94,7 @@ const ScrollImage = () => {
           }`,
           transition: "transform 0.05s linear",
         }}
-        className="w-[450px] h-[500px]  min-md:block hidden"
+        className="w-[450px] h-[500px]  md:block lg:hidden  hidden"
       >
         <Image
           width={430}
