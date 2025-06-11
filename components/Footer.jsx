@@ -38,7 +38,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="middle max-sm:w-auto max-sm:mx-auto w-[20%] p-3 h-auto ">
+          <div className="middle max-sm:w-full max-sm:py-3 w-[20%] p-3 h-auto ">
             <h4 className="text-secondary text-xl  lato capitalize max-lg:text-lg max-md:text-base">
               Pages
             </h4>
@@ -65,7 +65,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="middle max-sm:w-auto max-sm:mx-auto w-[25%] p-3 h-auto">
+          <div className="middle max-sm:w-auto max-sm:py-3 max-sm:mx-auto w-[25%] p-3 h-auto">
             <h4 className="text-secondary text-xl lato capitalize max-lg:text-lg max-md:text-base">
               Get In Touch
             </h4>
@@ -81,7 +81,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="left max-sm:w-full max-sm:px-3  w-[25%] p-3  h-auto max-[900px]:w-full">
+          <div className="left max-sm:w-full max-sm:px-3  max-sm:py-3 w-[25%] p-3  h-auto max-[900px]:w-full">
             <h4 className="text-secondary text-lg capitalize max-lg:text-base lato max-md:text-sm">
               Social Media
             </h4>
