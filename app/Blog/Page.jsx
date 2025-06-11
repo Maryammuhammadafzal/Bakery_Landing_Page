@@ -44,7 +44,7 @@ const BlogPage = () => {
         <h2 className="text-primary 2xl:text-7xl text-center max-md:max-w-lg gap-2 xl:text-6xl lg:text-5xl md:text-4xl max-md:text-5xl">
           <span className="text-secondary">Freshly</span> Backed Thoughts
         </h2>
-        <div className="w-full h-auto lato flex flex-wrap gap-4 justify-evenly max-md:w-full max-md:justify-center max-md:h-[500px] max-md:relative items-center">
+        <div className="w-full h-auto lato flex flex-wrap gap-4 justify-evenly max-md:w-full max-md:justify-center items-center">
           {blog_data.map(({ title, image, description }, index) => (
             <Card
               key={index}

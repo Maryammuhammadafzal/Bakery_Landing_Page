@@ -9,7 +9,7 @@ const HeroPage = () => {
     <div className="flex h-auto py-10 justify-center items-center">
       <div className="flex gap-5 md:flex-row flex-col justify-center items-center h-auto lg:w-[90%] w-[95%]">
         <div className="left flex flex-col h-auto md:w-1/2 w-full gap-4 md:items-start items-center justify-center">
-          <h1 className=" text-primary 2xl:text-7xl md:text-start text-center max-md:max-w-lg gap-2 xl:text-6xl lg:text-5xl md:text-4xl max-md:text-5xl items-center">
+          <h1 className=" text-primary 2xl:text-7xl md:text-start text-center max-md:max-w-lg gap-2 xl:text-6xl lg:text-5xl md:text-5xl max-md:text-5xl items-center">
             <span className="text-primary">
               <span className="text-secondary">Baking Happiness,</span>One Crumb
               at a Time
