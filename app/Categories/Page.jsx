@@ -72,51 +72,49 @@ const CategoriesPage = () => {
             <NavigationMenuList className="flex gap-2 lg:gap-4">
               {/* Item 1 */}
               <NavigationMenuItem>
-                <Link className="link" href="/cupcake" passHref>
-                  <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
+                  <NavigationMenuLink  href="/cupcake" className={`link flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                      CupCakes
                   </NavigationMenuLink>
-                </Link>
               </NavigationMenuItem>
               {/* Item 2 */}
               <NavigationMenuItem>
-                <Link className="link" href="/breads" passHref>
+                {/* <Link className="link" href="/breads" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                    Breads
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
               {/* Item 3 */}
              <NavigationMenuItem>
-                <Link className="link" href="/pastries" passHref>
+                {/* <Link className="link" href="/pastries" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                    Pastries
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
               {/* Item 4 */}
               <NavigationMenuItem>
-                <Link className="link" href="/cakes" passHref>
+                {/* <Link className="link" href="/cakes" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                  Cakes
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
               {/* Item 5 */}
               <NavigationMenuItem>
-                <Link className="link" href="/cookies" passHref>
+                {/* <Link className="link" href="/cookies" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                   Cookies
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
               {/* Item 6 */}
               <NavigationMenuItem>
-                <Link className="link" href="/seasonal-special" passHref>
+                {/* <Link className="link" href="/seasonal-special" passHref> */}
                   <NavigationMenuLink className={`flex gap-1 flex-row items-center justify-center link  ${navigationMenuTriggerStyle()}`}>
                   Seasonal Specials
                   </NavigationMenuLink>
-                </Link>
+                {/* </Link> */}
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -148,4 +146,4 @@ const CategoriesPage = () => {
   )
 }
 
-export default CategoriesPage
+export default CategoriesPage;
