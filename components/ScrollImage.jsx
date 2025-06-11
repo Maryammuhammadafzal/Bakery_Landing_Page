@@ -31,14 +31,14 @@ const ScrollImage = () => {
           }`,
           transition: "transform 0.05s linear",
         }}
-        className="w-[450px] h-[500px] max-xl:hidden block"
+        className="w-[450px] h-[500px] xl:block hidden"
       >
         <Image
           width={430}
           height={400}
           src={HeroImage}
           className="w-full object-cover"
-          alt="icon"
+          alt="image-1"
         />
       </div>
 
@@ -52,7 +52,7 @@ const ScrollImage = () => {
           }`,
           transition: "transform 0.05s linear",
         }}
-        className="w-[450px] h-[500px] max-lg:hidden block"
+        className="w-[450px] h-[500px] max-lg:hidden min-lg:block xl:hidden hidden"
       >
         <Image
           width={430}
@@ -73,7 +73,7 @@ const ScrollImage = () => {
           }`,
           transition: "transform 0.05s linear",
         }}
-        className="w-[450px] h-[500px] max-md:hidden block"
+        className="w-[450px] h-[500px]  min-md:block hidden"
       >
         <Image
           width={430}

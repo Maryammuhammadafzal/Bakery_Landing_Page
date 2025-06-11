@@ -36,7 +36,7 @@ const PopularPage = () => {
         </h2>
         <div className="w-full h-auto grid lato lg:grid-cols-3 mx-auto xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 max-md:gap-10 justify-center items-center">
           {popular_data.map(({ name, image, price }, index) => (
-            <Card key={index} className="border-none max-md:w-auto shadow-none w-[350px] h-[300px]">
+            <Card key={index} className="border-none  max-md:w-auto shadow-none w-[350px] h-[300px]">
               <CardContent className="flex justify-center items-center gap-3 flex-col">
               {
                 index != 0 ?
