@@ -66,8 +66,8 @@ const ScrollImage = () => {
       <div
         style={{
           transform: `${
-            offset + 40 < 610 &&
-            `translateY(${offset + 0}px) translateX(-${
+            offset + 40 < 600 &&
+            `translateY(${offset + 40}px) translateX(-${
               offset - 100
             }px) scale(${scale})`
           }`,

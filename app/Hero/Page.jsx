@@ -3,6 +3,7 @@ import React from "react";
 import CupcakeIcon from "../../public/cupcake-icon.png";
 import Image from "next/image";
 import ScrollImage from "@/components/ScrollImage";
+import HeroImage from "../../public/images/Hero-image.png";
 const HeroPage = () => {
   return (
     <div className="flex h-auto py-10 justify-center items-center">
@@ -31,6 +32,13 @@ const HeroPage = () => {
         </div>
         <div className="right flex  h-auto md:w-1/2 w-full items-center justify-center">
        <ScrollImage/>
+        <Image
+                 width={430}
+                 height={400}
+                 src={HeroImage}
+                 className="w-full md:hidden block object-cover"
+                 alt="icon"
+               />
         </div>
       </div>
     </div>
