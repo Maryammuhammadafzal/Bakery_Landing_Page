@@ -7,13 +7,8 @@ import BlogImage3 from "../../public/images/blog-image-3.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 const BlogPage = () => {
-  let [zIndex, setZIndex] = useState(10);
+  const [active , setActive ] = useState(false)
 
-  // useEffect(() => {
-  //   const changeZIndex = () => {
-  //     setZIndex(20);
-  //   };
-  // });
   let blog_data = [
     {
       title: "The Secret to Perfect Sour dough Bread.",
@@ -34,6 +29,8 @@ const BlogPage = () => {
       image: BlogImage3.src,
     },
   ];
+let card = document.getElementsByClassName('blog-card')
+console.log(card);
 
   return (
     <div className="w-full h-auto py-15 flex justify-center items-center">
@@ -45,8 +42,8 @@ const BlogPage = () => {
           {blog_data.map(({ title, image, description }, index) => (
             <Card
               key={index}
-              onClick={()=> {setZIndex(20)}}
-              className={`blog-card border-none max-md:absolute z-${zIndex} ${
+              onClick={()=> setActive(true)}
+              className={`blog-card ${active ? "z-50" : "z-10"} border-none max-md:absolute z-10 ${
                 (index == 0 &&
                   "max-md:left-[5%] max-sm:w-[85%] max-sm:h-auto max-sm:min-h-[380px] max-sm:left-0") ||
                 (index == 1 &&
