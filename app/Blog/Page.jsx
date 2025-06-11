@@ -37,8 +37,6 @@ const BlogPage = () => {
       image: BlogImage3.src,
     },
   ];
-  let card = document.getElementsByClassName("blog-card");
-  console.log(active);
 
   return (
     <div className="w-full h-auto py-15 flex justify-center items-center">
