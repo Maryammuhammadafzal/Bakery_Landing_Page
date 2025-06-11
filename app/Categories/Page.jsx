@@ -126,7 +126,7 @@ const CategoriesPage = () => {
                 {categories_data.map(({ name, image, price }, index) => (
             <Card key={index} className="border-none shadow-none max-sm:w-auto w-[350px] h-[350px]">
               <CardContent className="flex justify-center items-center gap-3 relative flex-col">
-                <div className="overlay absolute hover:hidden top-0 hover:bg-black/10 left-0 w-full h-full">
+                <div className="overlay absolute hover:block hidden top-0 hover:bg-black/10 left-0 z-20 w-full h-full">
                 <div className='w-full h-full justify-center items-center flex '>
                   <div className='flex gap-2'>
                    <div className='bg-white p-2 text-center flex justify-center items-center'>
