@@ -116,7 +116,7 @@ useEffect(() => {
           <div
             data-aos="fade-left"
             ref={menuRef}
-            className="mobile-menu z-50 absolute -right-2 top-0 p-3 w-[280px] h-screen bg-white shadow-lg"
+            className="mobile-menu z-50 absolute right-0 top-0 p-3 w-[280px] h-screen bg-white shadow-lg"
           >
             <Toggle
               data-aos="fade-right"
