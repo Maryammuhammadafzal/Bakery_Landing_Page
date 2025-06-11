@@ -36,7 +36,7 @@ const HeroPage = () => {
                  width={430}
                  height={400}
                  src={HeroImage}
-                 className="w-full md:hidden block object-cover"
+                 className="md:hidden block "
                  alt="icon"
                />
         </div>
