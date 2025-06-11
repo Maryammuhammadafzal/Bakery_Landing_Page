@@ -1,5 +1,5 @@
 import React from "react";
-import PopularImage1 from "../../public/images/popular-image-1.png";
+// import PopularImage1 from "../../public/images/popular-image-1.png";
 import PopularImage2 from "../../public/images/popular-image-2.png";
 import PopularImage3 from "../../public/images/popular-image-3.png";
 import PopularImage4 from "../../public/images/popular-image-4.png";
@@ -10,7 +10,7 @@ const PopularPage = () => {
     {
       name: "Chocolate Strawberry CupCake",
       price: "$7.99",
-      image: PopularImage1.src,
+      // image: PopularImage1,
     },
     {
       name: "Chocolate Strawberry CupCake",
@@ -36,15 +36,19 @@ const PopularPage = () => {
         </h2>
         <div className="w-full h-auto grid lato lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 justify-center items-center">
           {popular_data.map(({ name, image, price }, index) => (
-            <Card key={index} className="border-none shadow-none w-[350px] h-[300px]">
+            <Card key={index} className="border-none max-sm:w-auto shadow-none w-[350px] h-[300px]">
               <CardContent className="flex justify-center items-center gap-3 flex-col">
+              {
+                index != 0 ?
                 <Image
                   src={image}
                   width={200}
                   height={150}
                   alt={name}
                   className="h-[250px]"
-                />
+                /> :
+                (<div className="h-[250px]"></div>)
+              }  
                 <p className="text-primary px-10 text-center text-lg">
                   {name}
                 </p>

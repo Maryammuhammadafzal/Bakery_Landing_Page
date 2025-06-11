@@ -8,7 +8,7 @@ import BlogPage from "./Blog/Page";
 
 export default function Home() {
   return (
-    <div className="w-full h-auto overflow-hidden">
+    <div className="main w-full h-auto overflow-hidden relative">
       <HeroPage/>
       <PopularPage/>
       <AboutPage/>

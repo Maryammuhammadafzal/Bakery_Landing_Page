@@ -140,3 +140,27 @@ h5 {
 .link:hover .icon , .link:active .icon , .link:focus .icon{
   display: block;
 }
+
+.hero-image {
+  position: absolute;
+  width: 450px;
+  height: 500px;
+  top: 0;
+  right: 150px;
+  z-index: 1;
+  animation: scroll;
+}
+
+@keyframes scroll {
+0% {
+   top: 0;
+  right: 150px;
+  opacity: 1;
+}
+100% {
+   top: 0;
+  right: 10px;
+  opacity: 1;
+}
+}
+

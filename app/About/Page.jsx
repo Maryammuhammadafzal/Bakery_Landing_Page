@@ -4,7 +4,7 @@ import Image from "next/image";
 const AboutPage = () => {
   return (
     <div className="flex h-auto py-20 justify-center items-center">
-      <div className="flex gap-5 max-sm:px-2  md:flex-row flex-col justify-center items-center h-auto w-full">
+      <div className="flex gap-5 max-sm:px-3  md:flex-row flex-col justify-center items-center h-auto w-full">
         <div className="left md:pl-24  flex flex-col h-auto md:w-[55%] w-full gap-4 md:items-start items-center justify-center">
           <h2 className=" text-primary 2xl:text-[64px] md:text-start text-center max-md:max-w-lg gap-2 xl:text-5xl lg:text-4xl md:text-3xl max-md:text-4xl items-center">
             <span className="text-primary">
