@@ -6,8 +6,16 @@ import BlogImage3 from "../../public/images/blog-image-3.jpg";
 
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 const BlogPage = () => {
-  const [active , setActive ] = useState(null)
+  useEffect(()=> {
+    Aos.init({
+      duration: 1000,
+      once: true
+    })
+  })
+  const [active, setActive] = useState(null);
 
   let blog_data = [
     {
@@ -29,8 +37,8 @@ const BlogPage = () => {
       image: BlogImage3.src,
     },
   ];
-let card = document.getElementsByClassName('blog-card')
-console.log(active);
+  let card = document.getElementsByClassName("blog-card");
+  console.log(active);
 
   return (
     <div className="w-full h-auto py-15 flex justify-center items-center">
@@ -42,17 +50,20 @@ console.log(active);
           {blog_data.map(({ title, image, description }, index) => (
             <Card
               key={index}
-              onClick={()=> setActive(index)}
+              onClick={() => setActive(index)}
               className={`blog-card border-non  bg-[#FFF8E8] py-0 shadow-none w-[340px] h-[380px]`}
             >
-              <CardContent className="flex px-0 w-full  h-auto rounded-md flex-col">
-                <Image
-                  src={image}
-                  width={200}
-                  height={180}
-                  alt={title}
-                  className="h-[180px] w-full rounded-tl-md rounded-tr-md object-cover"
-                />
+              <CardContent className="flex px-0 w-full overflow-hidden h-auto rounded-md flex-col">
+                <div className="w-full h-[180px]">
+                  <Image
+                  data-aos="zoom-in"
+                    src={image}
+                    width={200}
+                    height={180}
+                    alt={title}
+                    className="blog-image hover:scale-110 h-[180px] w-full rounded-tl-md rounded-tr-md object-cover"
+                  />
+                </div>
                 <p className="text-primary px-4 py-2 text-base">{title}</p>
                 <p className="text-primary px-4 text-base">{description}</p>
               </CardContent>
