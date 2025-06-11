@@ -23,7 +23,7 @@ console.log(window.scrollY *  2);
 
   return (
     <div style={{ 
-         transform: `${offset + 40 < 700 ? `translateY(${offset - 40}px) translateX(-${offset + 40}px) scale(${scale})` : `translateY(${offset-40}px) translateX(${(offset-650)*0.1}px) scale(${scale+0.3})`}`,
+         transform: `${offset + 40 < 650 && `translateY(${offset - 50}px) translateX(-${offset + 30}px) scale(${scale})`}`,
         transition: "transform 0.05s linear",
       }} className='w-[450px] h-[500px]'>
       <Image width={430} height={400} src={HeroImage} className="w-full object-cover" alt="icon" />

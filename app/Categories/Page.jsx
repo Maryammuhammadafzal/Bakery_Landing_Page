@@ -123,7 +123,7 @@ const CategoriesPage = () => {
         </div>
       </div>
       <div className='lg:w-[85%] md:w-[95%] w-[98%] py-8 md:py-12 flex justify-center gap-3 items-center'>
-        <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center items-center w-full h-auto gap-10'>
+        <div className='grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-center items-center w-full h-auto gap-10'>
                 {categories_data.map(({ name, image, price }, index) => (
             <Card key={index} className="border-none shadow-none max-sm:w-auto w-[350px] h-[350px]">
               <CardContent className="flex justify-center items-center gap-3 flex-col">
