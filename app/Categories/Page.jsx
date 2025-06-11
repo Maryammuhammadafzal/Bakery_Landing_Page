@@ -128,7 +128,7 @@ const CategoriesPage = () => {
               <CardContent className="flex justify-center items-center gap-3 relative flex-col">
                 <div className="overlay absolute top-0 hover:bg-black/10 left-0 z-20 w-full h-full">
                 <div className='card-link w-full h-full justify-center items-center flex '>
-                  <div className='flex gap-2 w-full justify-center items-center '>
+                  <div className='flex gap-2 w-full h-full justify-center items-center '>
                    <div className='bg-white p-2 text-center flex justify-center items-center'>
                      <ShoppingCart className='h-4 w-4' />
                    </div>
