@@ -7,7 +7,7 @@ import BlogImage3 from "../../public/images/blog-image-3.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 const BlogPage = () => {
-  const [active , setActive ] = useState(false)
+  const [active , setActive ] = useState(null)
 
   let blog_data = [
     {
@@ -30,7 +30,7 @@ const BlogPage = () => {
     },
   ];
 let card = document.getElementsByClassName('blog-card')
-console.log(card);
+console.log(active);
 
   return (
     <div className="w-full h-auto py-15 flex justify-center items-center">
@@ -42,15 +42,8 @@ console.log(card);
           {blog_data.map(({ title, image, description }, index) => (
             <Card
               key={index}
-              onClick={()=> setActive(true)}
-              className={`blog-card ${active ? "z-50" : "z-10"} border-none max-md:absolute z-10 ${
-                (index == 0 &&
-                  "max-md:left-[5%] max-sm:w-[85%] max-sm:h-auto max-sm:min-h-[380px] max-sm:left-0") ||
-                (index == 1 &&
-                  "max-md:left-[15%] max-sm:left-[5%] max-sm:w-[85%] max-sm:h-auto max-sm:min-h-[380px]") ||
-                (index == 2 &&
-                  "max-md:left-[30%] max-sm:w-[85%] max-sm:h-auto max-sm:min-h-[380px] max-sm:left-[10%]")
-              }  max-md:shadow-2xl max-md:top-20 bg-[#FFF8E8] py-0 shadow-none w-[340px] h-[380px]`}
+              onClick={()=> setActive(index)}
+              className={`blog-card border-non  bg-[#FFF8E8] py-0 shadow-none w-[340px] h-[380px]`}
             >
               <CardContent className="flex px-0 w-full  h-auto rounded-md flex-col">
                 <Image
