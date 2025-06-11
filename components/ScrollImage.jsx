@@ -12,12 +12,8 @@ const ScrollImage = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  console.log(window.scrollY * 2);
-
-  console.log(offset);
+  
   const scale = Math.max(0.5, 1 - offset / 1000);
-
-  console.log(offset);
 
   return (
     <>
