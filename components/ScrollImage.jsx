@@ -26,7 +26,7 @@ const ScrollImage = () => {
           transform: `${
             offset + 40 < 730 &&
             `translateY(${offset - 70}px) translateX(-${
-              offset + 110
+              offset + 120
             }px) scale(${scale})`
           }`,
           transition: "transform 0.05s linear",
